@@ -54,7 +54,7 @@ fetch_rss_events("https://opentechcalendar.co.uk", "Open Tech Calendar")
 scrape_codebase_events()
 
 # --- SAVE TO A UNIFIED MASTER FILE ---
-csv_filename = f"scotland_tech_calendar_{datetime.now().strftime('%Y-%m-%d')}.csv"
+csv_filename = f"scotland_tech_calendar_master.csv"
 
 with open(csv_filename, mode='w', newline='', encoding='utf-8') as file:
     writer = csv.DictWriter(file, fieldnames=['Source', 'Title', 'Date/Time', 'Location', 'Link'])
