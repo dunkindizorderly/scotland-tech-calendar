@@ -5,9 +5,7 @@ on:
     # This runs the script automatically every Monday morning at 6:00 AM UTC
     - cron: '0 6 * * 1'
   workflow_dispatch: # This adds a manual "Run now" button in 
-
   GitHub
-
    if you want to test it
 
 jobs:
